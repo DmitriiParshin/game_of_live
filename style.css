@@ -37,12 +37,12 @@ a, table {
 
 .home {
     top: 5%;
-    left: 45%;
+    left: 30%;
 }
 
 .refresh {
     top: 5%;
-    left: 55%;
+    left: 60%;
 }
 
 .counter {
@@ -142,7 +142,8 @@ a, table {
 }
 
 .btn-info:hover {
-    color: #fff; background-color: #31b0d5;
+    color: #fff;
+    background-color: #31b0d5;
     border-color: #269abc
 }
 
