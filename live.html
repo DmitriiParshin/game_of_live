@@ -3,6 +3,7 @@
 {% block app_content %}
     <a class="btn btn-warning home" href="{{ url_for('index') }}">На главную</a>
     <a class="btn btn-info refresh" href="{{ url_for('live') }}">Создать новую жизнь</a>
+    <div class="counter">Поколение {{ game.counter }}</div>
     <table class="world">
         {% for i in range(game.world|length) %}
             <tr>
@@ -19,5 +20,8 @@
 {% endblock %}
 
 {% block scripts %}
-    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+    {{ super() }}
+    <script>
+        setInterval(() => window.location.reload(), 100);
+    </script>
 {% endblock %}
