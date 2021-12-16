@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    GameOfLife(10, 10)
+    GameOfLife(25, 25)
     return render_template('index.html')
 
 
